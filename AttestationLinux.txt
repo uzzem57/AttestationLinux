@@ -1,0 +1,82 @@
+vboxuser@Ubuntu:~$ mkdir Игрушки_для_школьников
+
+vboxuser@Ubuntu:~$ mkdir Игрушки_для_дошколят
+
+vboxuser@Ubuntu:~$ cd Игрушки_для_школьников
+
+vboxuser@Ubuntu:~/Игрушки_для_школьников$ touch Роботы.txt
+
+vboxuser@Ubuntu:~/Игрушки_для_школьников$ touch Конструктор.txt
+
+vboxuser@Ubuntu:~/Игрушки_для_школьников$ touch Настольные игры.txt
+
+vboxuser@Ubuntu:~/Игрушки_для_школьников$ cd
+
+vboxuser@Ubuntu:~$ cd Игрушки_для_дошколят
+
+vboxuser@Ubuntu:~/Игрушки_для_дошколят$ touch Мягкие игрушки.txt
+
+vboxuser@Ubuntu:~/Игрушки_для_дошколят$ touch Куклы.txt
+
+vboxuser@Ubuntu:~/Игрушки_для_дошколят$ touch Машинки.txt
+
+vboxuser@Ubuntu:~/Игрушки_для_дошколят$ cd
+
+vboxuser@Ubuntu:~$ mkdir Имя_Игрушки
+
+vboxuser@Ubuntu:~$ cp -rl Игрушки_для_школьников/* Игрушки_для_дошколят/* Имя_Игрушки
+
+vboxuser@Ubuntu:~$ tree Имя_Игрушки
+
+Имя_Игрушки
+
+├── игрушки.txt
+
+├── игры.txt
+
+├── Конструктор.txt
+
+├── Куклы.txt
+
+├── Машинки.txt
+
+├── Мягкие
+
+├── Настольные
+
+└── Роботы.txt
+
+
+
+0 directories, 8 files
+
+vboxuser@Ubuntu:~$ rm -rf Игрушки_для_школьников
+
+vboxuser@Ubuntu:~$ rm -rf Игрушки_для_дошколят
+
+vboxuser@Ubuntu:~$ mv Имя_Игрушки Игрушки
+
+vboxuser@Ubuntu:~$ cd Игрушки
+
+vboxuser@Ubuntu:~/Игрушки$ ls -la
+
+итого 12
+
+drwxrwxr-x  3 vboxuser vboxuser 4096 июн 14 10:30 .
+
+drwxr-x--- 19 vboxuser vboxuser 4096 июн 14 10:30 ..
+
+drwxrwxr-x  2 vboxuser vboxuser 4096 июн 14 10:21 Имя_Игрушки
+
+
+vboxuser@Ubuntu:~/Игрушки$ sudo snap install gimp
+
+gimp 2.10.30 от Snapcrafters✪ установлен
+
+vboxuser@Ubuntu:~/Игрушки$ sudo snap remove gimp
+
+gimp удалён
+
+vboxuser@Ubuntu:~$ crontab -e
+
+*/3**** echo 'Привет'>> /home/User/Ueshka/Игрушки/Роботы.txt
